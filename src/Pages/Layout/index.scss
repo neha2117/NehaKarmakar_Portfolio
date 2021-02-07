@@ -1,0 +1,63 @@
+@import "../../assets/styles/_fonts.scss";
+.layout {
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  &__wrapper {
+    background: white;
+    box-shadow: 0px 0.8125rem 2rem rgba(72, 62, 242, 0.16);
+    border-radius: 0.625rem;
+    width: 85%;
+    overflow: auto;
+    margin: auto;
+    display: flex;
+  }
+  &__container {
+    border-radius: 0.625rem;
+    display: flex;
+    // height: 100%;
+  }
+  &__left-aside {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__right-aside {
+    width: calc(100% - 35%);
+  }
+  &__personalInfo--sm {
+    display: none;
+  }
+  &__contact--sm {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    &__wrapper {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__left-aside,
+    &__right-aside {
+      width: 100%;
+    }
+    &__left-aside {
+      .hello {
+        display: none;
+      }
+    }
+    &__personalInfo--sm {
+      display: block;
+    }
+    &__personalInfo--lg {
+      display: none;
+    }
+    &__contact--lg {
+      display: none;
+    }
+    &__contact--sm {
+      display: block;
+    }
+  }
+}
