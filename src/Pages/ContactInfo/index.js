@@ -124,12 +124,12 @@ ContactInfo.defaultProps = {
     },
     {
       icon: GithubIcon,
-      value: "https://github.com/neha2117",
+      value: "GitHub",
       link: "https://github.com/neha2117"
     },
     {
       icon: LinkedInIcon,
-      value: "https://www.linkedin.com/in/nehakarmakar/",
+      value: "LinkedIn",
       link: "https://www.linkedin.com/in/nehakarmakar/"
     }
   ],
